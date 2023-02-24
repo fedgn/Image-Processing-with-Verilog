@@ -26,13 +26,13 @@ output_image = image3;
 
 % --- Display original image, MATLAB's result and your result
 figure(1)
-subplot(3,1,1)
+subplot(1,3,1)
 imshow(uint8(input_image), [0 255]);
 xlabel('Original Image')
-subplot(3,1,2)
+subplot(1,3,2)
 imshow(uint8(conv_image), [0 255]);
 xlabel('MATLAB Output Image')
-subplot(3,1,3)
+subplot(1,3,3)
 imshow(uint8(output_image), [0 255]);
 xlabel('Verilog Design Output Image')
 
